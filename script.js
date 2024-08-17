@@ -9,18 +9,18 @@ function displayCurrentDate() {
 
 // Function to calculate profit or loss
 function calculateProfitLoss() {
+    const target = parseFloat(document.getElementById('target').value);
     const entryPoint = parseFloat(document.getElementById('entryPoint').value);
-    const exitPoint = parseFloat(document.getElementById('exitPoint').value);
+    const entryEditable = parseFloat(document.getElementById('entryEditable').value);
+    const average1 = parseFloat(document.getElementById('average1').value);
+    const average2 = parseFloat(document.getElementById('average2').value);
+    const stoploss = parseFloat(document.getElementById('stoploss').value);
     const barGraph = document.getElementById('barGraph');
     const profitLoss = document.getElementById('profitLoss');
 
-    if (isNaN(entryPoint) || isNaN(exitPoint)) {
-        profitLoss.textContent = "Please enter valid numbers!";
-        profitLoss.className = '';
-        return;
-    }
-
-    let profitOrLoss = exitPoint - entryPoint;
+    // Add your custom calculation logic here based on the new inputs
+    
+    let profitOrLoss = entryEditable - entryPoint; // Example calculation
     
     // Normalize the width of the bar to a maximum value
     const maxBarWidth = 300; // Max width in pixels

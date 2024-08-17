@@ -10,22 +10,42 @@
     <div class="container">
         <header>
             <h1>Intraday Trading Tracker</h1>
-            <p id="currentDate"></p> <!-- This is where the date will be displayed -->
+            <p id="currentDate"></p> <!-- Date will be displayed here -->
         </header>
         <div class="input-section">
-            <label for="entryPoint">Entry Point:</label>
+            <div>
+                <label for="target">Target:</label>
+            <input type="number" id="target" placeholder="Enter target value">
+            </div>
+
+            <div>
+                <label for="entry">Entry:</label>
             <input type="number" id="entryPoint" placeholder="Enter entry point">
+            <input type="text" id="entryEditable" placeholder="">
+            </div>
 
-            <label for="exitPoint">Exit Point:</label>
-            <input type="number" id="exitPoint" placeholder="Enter exit point">
+            <div>
+                <label for="average1">Average 1:</label>
+            <input type="number" id="average1" placeholder="Enter average 1">
+            </div>
 
-            <button onclick="calculateProfitLoss()">Calculate</button>
+            <div>
+                <label for="average2">Average 2:</label>
+            <input type="number" id="average2" placeholder="Enter average 2">
+            </div>
+
+            <div>
+                <label for="stoploss">Stoploss:</label>
+            <input type="number" id="stoploss" placeholder="Enter stoploss value">
+            </div>
+
+            <!-- <button onclick="calculateProfitLoss()">Calculate</button> -->
         </div>
 
-        <div class="output-section">
+        <!-- <div class="output-section">
             <div id="barGraph"></div>
             <div id="profitLoss"></div>
-        </div>
+        </div> -->
     </div>
     <script src="script.js"></script>
 </body>
