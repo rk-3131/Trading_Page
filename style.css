@@ -3,23 +3,54 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #f9f1f1;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .container {
+    width: 100%;
+    max-width: 600px;
     background-color: rgb(215, 208, 208);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.container div {
-    margin: 50px;
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#currentDate {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
 }
 
 .input-section {
     margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    font-size: 18px;
+    margin-right: 10px;
+    display: inline-block;
+    min-width: 100px;
+}
+
+.input-group input {
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    width: calc(100% - 110px);
 }
 
 #barGraph {
@@ -28,11 +59,15 @@ body {
     background-color: #ddd;
     position: relative;
     margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 #profitLoss {
     font-size: 20px;
     font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
 }
 
 #profitLoss.profit {
@@ -43,13 +78,55 @@ body {
     color: red;
 }
 
-input {
-    padding: 10px;
-    font-size: 20px;
-    border: none;
-    border-radius: 10px;
+/* Input Background Colors */
+/* Text Colors for Input Fields */
+#index {
+    background-color: purple;
+    color: #ffffff; /* White text */
 }
 
-label {
-    font-size: 20px;
+#target {
+    background-color: green;
+    color: #FFFFFF; /* White text */
+}
+
+#entryPoint {
+    background-color: blue;
+    color: #FFFFFF; /* White text */
+}
+
+#entryEditable {
+    background-color: orange;
+    color: #000000; /* Black text */
+}
+
+#average1 {
+    background-color: pink;
+    color: #000000; /* Black text */
+}
+
+#average2 {
+    background-color: darkred;
+    color: #FFFFFF; /* White text */
+}
+
+#stoploss {
+    background-color: red;
+    color: #FFFFFF; /* White text */
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
 }

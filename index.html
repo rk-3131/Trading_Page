@@ -11,41 +11,44 @@
         <header>
             <h1>Intraday Trading Tracker</h1>
             <p id="currentDate"></p> <!-- Date will be displayed here -->
+            <label for="index">Index:</label>
+            <input type="text" id="index">
         </header>
+        <h3>CE Side</h3>
         <div class="input-section">
-            <div>
+            <div class="input-group">
                 <label for="target">Target:</label>
-            <input type="number" id="target" placeholder="Enter target value">
+                <input type="number" id="target">
             </div>
 
-            <div>
+            <div class="input-group">
                 <label for="entry">Entry:</label>
-            <input type="number" id="entryPoint" placeholder="Enter entry point">
-            <input type="text" id="entryEditable" placeholder="">
+                <input type="number" id="entryPoint">
+                <input type="text" id="entryEditable">
             </div>
 
-            <div>
+            <div class="input-group">
                 <label for="average1">Average 1:</label>
-            <input type="number" id="average1" placeholder="Enter average 1">
+                <input type="number" id="average1">
             </div>
 
-            <div>
+            <div class="input-group">
                 <label for="average2">Average 2:</label>
-            <input type="number" id="average2" placeholder="Enter average 2">
+                <input type="number" id="average2">
             </div>
 
-            <div>
+            <div class="input-group">
                 <label for="stoploss">Stoploss:</label>
-            <input type="number" id="stoploss" placeholder="Enter stoploss value">
+                <input type="number" id="stoploss">
             </div>
 
-            <!-- <button onclick="calculateProfitLoss()">Calculate</button> -->
+            <button onclick="calculateProfitLoss()">Calculate</button>
         </div>
 
-        <!-- <div class="output-section">
+        <div class="output-section">
             <div id="barGraph"></div>
             <div id="profitLoss"></div>
-        </div> -->
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
