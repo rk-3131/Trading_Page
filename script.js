@@ -1,3 +1,13 @@
+// Function to display the current date
+function displayCurrentDate() {
+    const currentDate = new Date();
+    const dateString = currentDate.toLocaleDateString('en-US', {
+        weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
+    });
+    document.getElementById('currentDate').textContent = dateString;
+}
+
+// Function to calculate profit or loss
 function calculateProfitLoss() {
     const entryPoint = parseFloat(document.getElementById('entryPoint').value);
     const exitPoint = parseFloat(document.getElementById('exitPoint').value);
@@ -29,3 +39,6 @@ function calculateProfitLoss() {
         profitLoss.className = '';
     }
 }
+
+// Call the function to display the date when the page loads
+window.onload = displayCurrentDate;
