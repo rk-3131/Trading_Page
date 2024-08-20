@@ -100,6 +100,21 @@ header {
     color: #000000; /* Black text */
 }
 
+#entryEditable2 {
+    background-color: green;
+    width: 40%;
+    display: inline;
+    color: #000000; /* Black text */
+}
+
+#entryEditable3 {
+    background-color: rgb(255, 136, 0);
+    width: 40%;
+    display: inline;
+    color: #000000; /* Black text */
+}
+
+
 #average1 {
     background-color: pink;
     color: #000000; /* Black text */
